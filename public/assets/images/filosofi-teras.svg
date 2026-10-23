@@ -1,0 +1,10 @@
+
+<!-- File: filosofi-teras.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="560" viewBox="0 0 400 560">
+<rect width="400" height="560" fill="#D9D4C7"/>
+<rect x="40" y="40" width="320" height="480" fill="none" stroke="#495057" stroke-width="3"/>
+<circle cx="200" cy="260" r="100" fill="#A3A380"/>
+<text x="200" y="120" text-anchor="middle" font-family="Georgia" font-size="34" fill="#27302D">FILOSOFI</text>
+<text x="200" y="165" text-anchor="middle" font-family="Georgia" font-size="38" fill="#27302D">TERAS</text>
+<text x="200" y="490" text-anchor="middle" font-family="Arial" font-size="18" fill="#27302D">GALERI BUKU</text>
+</svg>

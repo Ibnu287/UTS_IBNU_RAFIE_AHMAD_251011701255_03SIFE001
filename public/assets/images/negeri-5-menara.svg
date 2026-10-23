@@ -1,0 +1,11 @@
+
+<!-- File: negeri-5-menara.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="560" viewBox="0 0 400 560">
+<rect width="400" height="560" fill="#C9D9D2"/>
+<circle cx="300" cy="100" r="45" fill="#F3D9A4"/>
+<path d="M0 400 L100 300 L180 370 L280 250 L400 370 V560 H0Z" fill="#48685B"/>
+<path d="M160 400 V190 H240 V400 M180 190 V150 H220 V190" fill="#F4E8C1"/>
+<text x="200" y="90" text-anchor="middle" font-family="Georgia" font-size="30" fill="#213B32">NEGERI 5</text>
+<text x="200" y="130" text-anchor="middle" font-family="Georgia" font-size="35" fill="#213B32">MENARA</text>
+<text x="200" y="510" text-anchor="middle" font-family="Arial" font-size="18" fill="#FFFFFF">GALERI BUKU</text>
+</svg>

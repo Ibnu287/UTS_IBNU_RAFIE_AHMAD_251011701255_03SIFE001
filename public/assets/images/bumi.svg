@@ -1,0 +1,9 @@
+
+<!-- File: bumi.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="560" viewBox="0 0 400 560">
+<rect width="400" height="560" fill="#172554"/>
+<circle cx="200" cy="280" r="125" fill="#38BDF8"/>
+<path d="M100 220 L160 170 L200 230 L270 190 L310 270 L260 340 L170 320 L130 280Z" fill="#166534"/>
+<text x="200" y="100" text-anchor="middle" font-family="Georgia" font-size="52" fill="#FFFFFF">BUMI</text>
+<text x="200" y="510" text-anchor="middle" font-family="Arial" font-size="19" fill="#FFFFFF">GALERI BUKU</text>
+</svg>
