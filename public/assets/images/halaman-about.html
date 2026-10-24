@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:8000/tentang-kami -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Galeri Buku</title>
+
+    <link rel="stylesheet" href="./halaman-about_files/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #263238;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #173b32, #326b55);
+            color: white;
+            padding: 65px 25px;
+            border-radius: 16px;
+        }
+
+        .book-card {
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.2s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+        }
+
+        .book-cover {
+            width: 100%;
+            height: 260px;
+            object-fit: contain;
+            background: #eeeeee;
+            padding: 10px;
+        }
+
+        .page-title {
+            font-weight: bold;
+            color: #173b32;
+        }
+
+        footer {
+            background: #173b32;
+            color: white;
+            margin-top: 60px;
+            padding: 22px 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #173b32;">
+    <div class="container">
+        <a class="navbar-brand" href="http://127.0.0.1:8000/">
+            Galeri Buku
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavigasi" aria-controls="menuNavigasi" aria-expanded="false" aria-label="Buka navigasi">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuNavigasi">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="http://127.0.0.1:8000/">
+                        Beranda
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="http://127.0.0.1:8000/koleksi-buku">
+                        Koleksi Buku
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="http://127.0.0.1:8000/tentang-kami">
+                        Tentang Kami
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-4">
+    
+<section class="hero mb-5">
+    <p class="text-uppercase mb-2">Tentang Kami</p>
+
+    <h1 class="display-5 fw-bold">
+        Mengenal Galeri Buku
+    </h1>
+
+    <p class="lead mt-3 mb-0">
+        Ruang untuk menemukan buku, mendapatkan pengetahuan,
+        dan menikmati berbagai cerita.
+    </p>
+</section>
+
+<section class="row g-4 mb-5">
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100 p-4">
+            <h2 class="page-title h4">Siapa Kami?</h2>
+
+            <p>
+                Galeri Buku merupakan website katalog buku yang dibuat
+                untuk membantu pengunjung melihat berbagai pilihan buku
+                dalam satu tempat.
+            </p>
+
+            <p class="mb-0">
+                Pengunjung dapat mencari buku berdasarkan judul, penulis,
+                atau genre, serta membuka halaman detail untuk membaca
+                informasi buku.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100 p-4">
+            <h2 class="page-title h4">Tujuan Kami</h2>
+
+            <p>
+                Kami ingin membuat informasi buku lebih mudah ditemukan
+                dan membantu pengunjung mengenal berbagai jenis bacaan.
+            </p>
+
+            <p class="mb-0">
+                Website ini juga menjadi proyek pembelajaran pengembangan
+                web menggunakan Laravel, Blade Template, dan Bootstrap.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="card border-0 shadow-sm p-4 text-center">
+    <h2 class="page-title h4">Mulai Menjelajahi Buku</h2>
+
+    <p class="text-secondary">
+        Temukan buku yang menarik untuk dibaca.
+    </p>
+
+    <div>
+        <a href="http://127.0.0.1:8000/koleksi-buku" class="btn btn-success">
+            Lihat Koleksi Buku
+        </a>
+
+        <a href="http://127.0.0.1:8000/" class="btn btn-outline-secondary ms-2">
+            Kembali ke Beranda
+        </a>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container text-center">
+        <p class="mb-1">Galeri Buku</p>
+        <small>Temukan buku yang sesuai dengan minatmu.</small>
+    </div>
+</footer>
+
+<script src="./halaman-about_files/bootstrap.bundle.min.js.download"></script>
+
+
+</body></html>

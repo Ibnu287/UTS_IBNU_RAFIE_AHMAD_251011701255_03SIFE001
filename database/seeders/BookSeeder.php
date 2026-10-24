@@ -2,28 +2,28 @@
 
 namespace Database\Seeders;
 
-use App\Models\Book;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class BookSeeder extends Seeder
 {
     public function run(): void
     {
-        Book::insert([
+        $books = [
             [
                 'title' => 'Laut Bercerita',
                 'author' => 'Leila S. Chudori',
                 'genre' => 'Novel',
                 'price' => 95000,
-                'image' => 'laut-bercerita.svg',
-                'summary' => 'Novel tentang persahabatan, perjuangan, kehilangan, dan ingatan terhadap masa lalu.',
+                'image' => 'laut-bercerita.jfif',
+                'summary' => 'Novel tentang persahabatan, keluarga, kehilangan, dan perjuangan pada masa Orde Baru.',
             ],
             [
                 'title' => 'Bumi',
                 'author' => 'Tere Liye',
                 'genre' => 'Fantasi',
                 'price' => 89000,
-                'image' => 'bumi.svg',
+                'image' => 'bumi.jfif',
                 'summary' => 'Petualangan Raib, Seli, dan Ali dalam dunia paralel yang penuh misteri.',
             ],
             [
@@ -31,15 +31,15 @@ class BookSeeder extends Seeder
                 'author' => 'Henry Manampiring',
                 'genre' => 'Pengembangan Diri',
                 'price' => 98000,
-                'image' => 'filosofi-teras.svg',
-                'summary' => 'Pengenalan filsafat Stoisisme dan cara menerapkannya dalam kehidupan sehari-hari.',
+                'image' => 'filosofi-teras.jfif',
+                'summary' => 'Buku pengantar filsafat Stoisisme untuk menghadapi masalah kehidupan sehari-hari.',
             ],
             [
                 'title' => 'Atomic Habits',
                 'author' => 'James Clear',
                 'genre' => 'Pengembangan Diri',
                 'price' => 120000,
-                'image' => 'atomic-habits.svg',
+                'image' => 'atomic-habits.jfif',
                 'summary' => 'Panduan membangun kebiasaan baik melalui perubahan kecil yang dilakukan secara konsisten.',
             ],
             [
@@ -47,33 +47,43 @@ class BookSeeder extends Seeder
                 'author' => 'Ahmad Fuadi',
                 'genre' => 'Novel',
                 'price' => 85000,
-                'image' => 'negeri-5-menara.svg',
-                'summary' => 'Kisah persahabatan dan perjuangan enam santri dalam mengejar cita-cita.',
+                'image' => 'negeri-5-menara.jfif',
+                'summary' => 'Kisah persahabatan dan perjuangan enam santri dalam meraih cita-cita.',
             ],
             [
                 'title' => 'Laskar Pelangi',
                 'author' => 'Andrea Hirata',
                 'genre' => 'Novel',
                 'price' => 79000,
-                'image' => 'laskar-pelangi.svg',
-                'summary' => 'Perjuangan anak-anak Belitung dalam mendapatkan pendidikan dan meraih impian.',
+                'image' => 'laskar-pelangi.jfif',
+                'summary' => 'Kisah perjuangan anak-anak Belitung dalam memperoleh pendidikan dan mengejar mimpi.',
             ],
             [
                 'title' => 'Sebuah Seni untuk Bersikap Bodo Amat',
                 'author' => 'Mark Manson',
                 'genre' => 'Pengembangan Diri',
                 'price' => 99000,
-                'image' => 'seni-bodo-amat.svg',
-                'summary' => 'Buku tentang menentukan hal yang benar-benar penting dan menghadapi keterbatasan hidup.',
+                'image' => 'seni-bodo-amat.jfif',
+                'summary' => 'Buku pengembangan diri tentang menentukan hal yang benar-benar penting dalam hidup.',
             ],
             [
                 'title' => 'Pulang',
                 'author' => 'Tere Liye',
                 'genre' => 'Fiksi',
                 'price' => 92000,
-                'image' => 'pulang.svg',
-                'summary' => 'Kisah perjalanan hidup, keluarga, kesetiaan, dan pencarian makna pulang.',
+                'image' => 'pulang.jfif',
+                'summary' => 'Kisah Bujang yang menjalani perjalanan hidup dalam dunia keluarga dan pertarungan.',
             ],
-        ]);
+        ];
+
+        foreach ($books as $book) {
+            DB::table('books')->updateOrInsert(
+                ['title' => $book['title']],
+                array_merge($book, [
+                    'updated_at' => now(),
+                    'created_at' => now(),
+                ])
+            );
+        }
     }
 }
